@@ -1,0 +1,74 @@
+1)  Creating and Renaming Files/Directories.
+
+ Step 1: Create a directory named test_dir
+
+mkdir test_dir
+
+ Step 2: Navigate into the test_dir
+
+cd test_dir
+
+ Step 3: Create an empty file called example.txt
+
+touch example.txt
+
+ Step 4: Rename example.txt to renamed_example.txt
+
+mv example.txt renamed_example.txt
+
+2)  Viewing File Contents.
+
+-> Display the entire contents of /etc/passwd
+
+cat /etc/passwd
+
+-> Display only the first 5 lines
+
+head -n 5 /etc/passwd
+
+-> Display only the last 5 lines
+
+tail -n 5 /etc/passwd
+
+3) Searching for Patterns.
+
+grep "root" /etc/passwd
+
+4) Zipping and Unzipping.
+
+ Step 1: Compress test_dir into a zip file
+
+zip -r test_dir.zip test_dir
+
+ Step 2: Create a new directory for unzipping 
+
+mkdir unzipped_dir
+
+ Step 3: Unzip the contents into unzipped_dir
+
+unzip test_dir.zip -d unzipped_dir
+
+5) Downloading Files.
+
+wget https://example.com/sample.txt
+
+6) Changing Permissions.
+
+ Step 1: Create the file
+
+touch secure.txt
+
+ Step 2: Change its permissions to read-only for everyone
+
+chmod 444 secure.txt
+
+7) Working with Environment Variables.
+
+export MY_VAR="Hello, Linux!"
+echo $MY_VAR
+
+
+
+
+
+
